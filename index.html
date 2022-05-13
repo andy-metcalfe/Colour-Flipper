@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Colour Flipper</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="stylesheet" href="css/styles.css"/>
+  </head>
+
+  <body id="background">
+
+    <div id="loader-box">
+      <div id='loader-container'>
+        <img id="loader-gif" src='images/loading.gif' height='120px'>
+      </div>
+    </div>
+
+
+    <nav>
+      <ul>
+       <li class="switch-buttons" id="random-colour-button">Random Colour</li>
+       <li class="switch-buttons" id="colour-selector-button">Colour Selector</li>
+      </ul>
+    </nav>
+
+    <!--Random Colour-->
+    <div id="random-colour-switch-container" class="switch-container">
+      <p>RGB</p>
+        <label class="switch">
+          <input id="random-colour-switch-checkbox" type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      <p>Hex</p>
+    </div>
+    
+    <div id="random-colour-main" class="main">
+      <div id="final-result" >
+        <h1 id="value">Click for a random colour!</h1>
+      </div>
+    </div>
+
+
+    <!--Colour selector-->
+    <div id="colour-selector-switch-container" class="switch-container">
+      <p>RGB</p>
+        <label class="switch">
+          <input id="colour-selector-switch-checkbox" type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      <p>Hex</p>
+    </div>
+
+    <div id="colour-selector-main" class="main">
+
+      <div id="rgb-slider-container">
+        <div class="red-slide-container">
+          <label for="red-slider">Red:</label>
+          <input name="red-slider" type="range" min="0" max="255" value="225" class="RGB-Slider" id="red-slider">
+          <span><span id="red-value">225</span></span>
+        </div>
+        <div class="green-slide-container">
+          <label for="green-slider">Green:</label>
+          <input name="green-slider" type="range" min="0" max="255" value="225" class="RGB-Slider" id="green-slider">
+          <span><span id="green-value">225</span></span>
+        </div>
+        <div class="blue-slide-container">
+          <label for="blue-slider">Blue:</label>
+          <input name="blue-slider" type="range" min="0" max="255" value="225" class="RGB-Slider" id="blue-slider">
+          <span><span id="blue-value">225</span></span>
+        </div>
+      </div>
+
+      <div id="hex-select-container">
+        Hex:
+        <select name="one" id="hex-select-1" class="hex-select-slider">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+          <option value="D">D</option>
+          <option value="E">E</option>
+          <option value="F">F</option>
+        </select>
+        <select name="one" id="hex-select-2" class="hex-select-slider">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+          <option value="D">D</option>
+          <option value="E">E</option>
+          <option value="F">F</option>
+        </select>
+        <select name="one" id="hex-select-3" class="hex-select-slider">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+          <option value="D">D</option>
+          <option value="E">E</option>
+          <option value="F">F</option>
+        </select>
+        <select name="one" id="hex-select-4" class="hex-select-slider">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+          <option value="D">D</option>
+          <option value="E">E</option>
+          <option value="F">F</option>
+        </select>
+        <select name="one" id="hex-select-5" class="hex-select-slider">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+          <option value="D">D</option>
+          <option value="E">E</option>
+          <option value="F">F</option>
+        </select>
+        <select name="one" id="hex-select-6" class="hex-select-slider">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+          <option value="D">D</option>
+          <option value="E">E</option>
+          <option value="F">F</option>
+        </select>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <span class="created-by-container">Created By <a id="andyMetcalfe" href="https://andymetcalfe.co.uk/" target="_blank">Andy Metcalfe</a></span>
+    </div>
+
+   <script type="application/javascript" src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/app.js" type="text/javascript"></script>
+
+  </body>
+</html>
